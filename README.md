@@ -1,5 +1,5 @@
 # Nuxtjs-Trello
-
+![alt text](/gitImages/screen.png)
 The website stores data into indexDb for data persistence.
 
 Drag and Drop are custom implemented. 
