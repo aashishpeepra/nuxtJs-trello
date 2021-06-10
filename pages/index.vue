@@ -30,6 +30,18 @@ import constants from "../helper/constants";
 import Board from "../components/board.vue";
 import localforage from "localforage";
 export default {
+  head(){
+    return { 
+      title:"NuxtJs-Trello",
+      meta:[
+        {
+          hid:"description",
+          name:"description",
+          content:"This is NuxtJs powered Trello clone. Works smoothly with IndexDB pre-configured.Ready to change your life"
+        }
+      ]
+    }
+  },
   data: () => {
     return {
       boardTitle: "",

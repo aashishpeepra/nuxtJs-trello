@@ -78,6 +78,18 @@ export default {
       this.wholeData = response;
     });
   },
+   head(){
+    return { 
+      title:"NuxtJs-Trello",
+      meta:[
+        {
+          hid:"description",
+          name:"description",
+          content:"This is NuxtJs powered Trello clone. Works smoothly with IndexDB pre-configured.Ready to change your life"
+        }
+      ]
+    }
+  },
   methods: {
     deleteItem: function() {
       const selectedBoard = this.wholeData.find(board => board.title == this.board);
