@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="board-container" >
+    <div class="board-container" v-if="data.length>0">
       <Board
         v-for="board in data"
         :key="board.title"
@@ -19,7 +19,9 @@
         />
       </div>
     </div>
-  
+  <div v-else>
+    <h2>Loading Database... </h2>
+  </div>
   </div>
 </template>
 
